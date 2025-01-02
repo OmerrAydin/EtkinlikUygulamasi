@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/search"
+        android:title="Search"
+        android:icon="@android:drawable/ic_menu_search"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/spinner"
+        android:title="Select Option"
+        app:showAsAction="always"
+        app:actionViewClass="android.widget.Spinner" />
+
+    <item android:id="@+id/viewFavorite" android:title="Favorileri Görüntüle"></item>
+    <item android:id="@+id/viewAcceptEvent" android:title="Katıldığım Etkinliklerim"></item>
+    <item android:id="@+id/viewPreferenceEvent" android:title="Etkinlik Tercihlerim"></item>
+    <item android:id="@+id/profileInfoItem" android:title="Kişisel Ayarlar"></item>
+    <item android:id="@+id/logoutItem" android:title="Çıkış Yap"></item>
+</menu>

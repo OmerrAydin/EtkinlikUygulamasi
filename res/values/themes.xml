@@ -1,0 +1,15 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.EtkinlikProjesi" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="CustomAlertDialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">#FFC3A0</item>
+        <item name="android:textColorPrimary">#FFFFFF</item>
+        <item name="android:background">#00B3B3</item>
+    </style>
+
+    <style name="Theme.EtkinlikProjesi" parent="Base.Theme.EtkinlikProjesi" />
+</resources>

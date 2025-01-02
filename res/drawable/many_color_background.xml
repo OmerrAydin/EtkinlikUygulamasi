@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Ana Gradyan Arka Plan -->
+    <item>
+        <shape>
+            <gradient
+                android:startColor="#FFDEE9"
+                android:endColor="#B5FFFC"
+                android:angle="45" />
+        </shape>
+    </item>
+
+    <!-- Büyük Daire -->
+    <item android:left="10dp" android:top="0dp" android:width="1000dp">
+        <shape>
+            <solid android:color="#FFC3A0" />
+            <corners android:radius="100dp" />
+        </shape>
+    </item>
+
+    <!-- Küçük Daire -->
+    <item android:left="-100dp" android:top="100dp" android:right="50dp">
+        <shape>
+            <solid android:color="#FF77A9" />
+            <corners android:radius="100dp" />
+        </shape>
+    </item>
+
+
+
+</layer-list>

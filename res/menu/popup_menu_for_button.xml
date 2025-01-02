@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/createItem" android:title="Etkinlik Oluştur"></item>
+    <item android:id="@+id/seenMyEventsItem" android:title="Oluşturduğum Etkinlikler"></item>
+    <item android:id="@+id/mapViewItem" android:title="Harita Görünümü"></item>
+    <item android:id="@+id/specialViewItem" android:title="Özelleştirilmiş Görünüm"></item>
+
+</menu>

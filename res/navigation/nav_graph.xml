@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/anaSayfaFragment">
+
+    <fragment
+        android:id="@+id/anaSayfaFragment"
+        android:name="com.omeraydin.etkinlikprojesi.view.AnaSayfaFragment"
+        android:label="fragment_ana_sayfa"
+        tools:layout="@layout/fragment_ana_sayfa" >
+        <action
+            android:id="@+id/action_anaSayfaFragment_to_etkinlikOlusturmaFragment"
+            app:destination="@id/etkinlikOlusturmaFragment" />
+        <action
+            android:id="@+id/action_anaSayfaFragment_to_etkinlikGoruntulemeFragment"
+            app:destination="@id/etkinlikGoruntulemeFragment" />
+        <action
+            android:id="@+id/action_anaSayfaFragment_to_favoritesFragment"
+            app:destination="@id/favoritesFragment" />
+        <action
+            android:id="@+id/action_anaSayfaFragment_to_kullaniciBilgileriFragment"
+            app:destination="@id/kullaniciBilgileriFragment" />
+        <action
+            android:id="@+id/action_anaSayfaFragment_to_etkinlikTercihleriniDuzenleFragment"
+            app:destination="@id/etkinlikTercihleriniDuzenleFragment" />
+        <action
+            android:id="@+id/action_anaSayfaFragment_to_themselvesGeneratedEventsFragment"
+            app:destination="@id/themselvesGeneratedEventsFragment" />
+        <action
+            android:id="@+id/action_anaSayfaFragment_to_acceptedEventsFragment"
+            app:destination="@id/acceptedEventsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/etkinlikOlusturmaFragment"
+        android:name="com.omeraydin.etkinlikprojesi.view.EtkinlikOlusturmaFragment"
+        android:label="fragment_etkinlik_olusturma"
+        tools:layout="@layout/fragment_etkinlik_olusturma" >
+        <action
+            android:id="@+id/action_etkinlikOlusturmaFragment_to_anaSayfaFragment"
+            app:destination="@id/anaSayfaFragment"
+            app:popUpTo="@id/etkinlikOlusturmaFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/etkinlikGoruntulemeFragment"
+        android:name="com.omeraydin.etkinlikprojesi.view.EtkinlikGoruntulemeFragment"
+        android:label="fragment_etkinlik_goruntuleme"
+        tools:layout="@layout/fragment_etkinlik_goruntuleme" >
+        <action
+            android:id="@+id/action_etkinlikGoruntulemeFragment_to_anaSayfaFragment"
+            app:destination="@id/anaSayfaFragment"
+            app:popUpTo="@id/etkinlikGoruntulemeFragment"
+            app:popUpToInclusive="true" />
+        <argument android:name="event_id"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/favoritesFragment"
+        android:name="com.omeraydin.etkinlikprojesi.view.FavoritesFragment"
+        android:label="fragment_favorites"
+        tools:layout="@layout/fragment_favorites" >
+        <action
+            android:id="@+id/action_favoritesFragment_to_anaSayfaFragment"
+            app:destination="@id/anaSayfaFragment"
+            app:popUpTo="@id/favoritesFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_favoritesFragment_to_etkinlikGoruntulemeFragment"
+            app:destination="@id/etkinlikGoruntulemeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/kullaniciBilgileriFragment"
+        android:name="com.omeraydin.etkinlikprojesi.view.KullaniciBilgileriFragment"
+        android:label="fragment_kullanici_bilgileri"
+        tools:layout="@layout/fragment_kullanici_bilgileri" >
+        <action
+            android:id="@+id/action_kullaniciBilgileriFragment_to_anaSayfaFragment"
+            app:destination="@id/anaSayfaFragment"
+            app:popUpTo="@id/kullaniciBilgileriFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/etkinlikTercihleriniDuzenleFragment"
+        android:name="com.omeraydin.etkinlikprojesi.view.EtkinlikTercihleriniDuzenleFragment"
+        android:label="fragment_etkinlik_tercihlerini_duzenle"
+        tools:layout="@layout/fragment_etkinlik_tercihlerini_duzenle" >
+        <action
+            android:id="@+id/action_etkinlikTercihleriniDuzenleFragment_to_anaSayfaFragment"
+            app:destination="@id/anaSayfaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/themselvesGeneratedEventsFragment"
+        android:name="com.omeraydin.etkinlikprojesi.view.ThemselvesGeneratedEventsFragment"
+        android:label="fragment_themselves_generated_events"
+        tools:layout="@layout/fragment_themselves_generated_events" >
+        <action
+            android:id="@+id/action_themselvesGeneratedEventsFragment_to_anaSayfaFragment"
+            app:destination="@id/anaSayfaFragment" />
+        <action
+            android:id="@+id/action_themselvesGeneratedEventsFragment_to_etkinlikGoruntulemeFragment"
+            app:destination="@id/etkinlikGoruntulemeFragment" />
+        <action
+            android:id="@+id/action_themselvesGeneratedEventsFragment_to_participantsFragment"
+            app:destination="@id/participantsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/participantsFragment"
+        android:name="com.omeraydin.etkinlikprojesi.view.ParticipantsFragment"
+        android:label="fragment_participants"
+        tools:layout="@layout/fragment_participants" >
+        <argument
+            android:name="event_id"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/acceptedEventsFragment"
+        android:name="com.omeraydin.etkinlikprojesi.view.AcceptedEventsFragment"
+        android:label="fragment_accepted_events"
+        tools:layout="@layout/fragment_accepted_events" >
+        <action
+            android:id="@+id/action_acceptedEventsFragment_to_etkinlikGoruntulemeFragment"
+            app:destination="@id/etkinlikGoruntulemeFragment" />
+        <action
+            android:id="@+id/action_acceptedEventsFragment_to_anaSayfaFragment"
+            app:destination="@id/anaSayfaFragment" />
+    </fragment>
+</navigation>
